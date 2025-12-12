@@ -11,6 +11,7 @@ import { clusterApiUrl } from '@solana/web3.js';
 import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { RequestAirdrop } from './components/requestAirdrop';
+import { SendToken } from './components/sendToken';
 
 function App() {
   const network = WalletAdapterNetwork.Devnet;
@@ -25,6 +26,10 @@ function App() {
             <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
               <WalletMultiButton />
               <WalletDisconnectButton />
+            
+              <SendToken/>
+                <br/>
+              <br/>
               <RequestAirdrop />
             </div>
           </WalletModalProvider>
