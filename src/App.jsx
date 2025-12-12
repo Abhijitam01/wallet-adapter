@@ -12,6 +12,7 @@ import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { RequestAirdrop } from './components/requestAirdrop';
 import { SendToken } from './components/sendToken';
+import { ShowBalance } from './components/showBalance';
 
 function App() {
   const network = WalletAdapterNetwork.Devnet;
@@ -31,6 +32,7 @@ function App() {
                 <br/>
               <br/>
               <RequestAirdrop />
+              <ShowBalance/>
             </div>
           </WalletModalProvider>
         </WalletProvider>
