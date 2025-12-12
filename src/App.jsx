@@ -13,6 +13,7 @@ import '@solana/wallet-adapter-react-ui/styles.css';
 import { RequestAirdrop } from './components/requestAirdrop';
 import { SendToken } from './components/sendToken';
 import { ShowBalance } from './components/showBalance';
+import { SignMessage } from './components/signMessage';
 
 function App() {
   const network = WalletAdapterNetwork.Devnet;
@@ -33,6 +34,7 @@ function App() {
               <br/>
               <RequestAirdrop />
               <ShowBalance/>
+              <SignMessage/>
             </div>
           </WalletModalProvider>
         </WalletProvider>
